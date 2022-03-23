@@ -85,7 +85,7 @@ export class QueryEditor extends PureComponent<Props> {
       this.props.query.mongo.value
     );
 
-    return databases.map(name => ({
+    return databases.map((name) => ({
       value: name,
       label: name,
     }));
@@ -94,7 +94,7 @@ export class QueryEditor extends PureComponent<Props> {
   getDisks = async (): Promise<Array<SelectableValue<string>>> => {
     const disks = await this.props.datasource.getDisks(this.props.query.project.value, this.props.query.mongo.value);
 
-    return disks.map(name => ({
+    return disks.map((name) => ({
       value: name,
       label: name,
     }));
@@ -135,7 +135,7 @@ export class QueryEditor extends PureComponent<Props> {
 
             {showQueryTypes && (
               <Segment
-                value={METRIC_TYPES.find(t => t.value === queryType) || METRIC_TYPES[0]}
+                value={METRIC_TYPES.find((t) => t.value === queryType) || METRIC_TYPES[0]}
                 options={METRIC_TYPES}
                 onChange={this.onQueryTypeChange}
                 placeholder="select metric"

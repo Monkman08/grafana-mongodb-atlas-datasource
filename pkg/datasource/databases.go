@@ -10,7 +10,7 @@ import (
 type Databases []string
 
 func GetDatabases(ctx context.Context, client *MongoDBAtlasClient, opts models.ListDatabasesOptions) (Databases, error) {
-	body, err := client.query(ctx, "/groups/"+opts.Project+"/processes/"+opts.Mongo+"/databases", nil)
+	body, err := client.query(ctx, "/groups/"+opts.Project+"/hosts/"+opts.Mongo+"/databases", nil)
 	if err != nil {
 		return nil, err
 	}

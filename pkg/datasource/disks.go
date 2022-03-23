@@ -12,7 +12,7 @@ type DiskName string
 type Disks []DiskName
 
 func GetDisks(ctx context.Context, client *MongoDBAtlasClient, opts models.ListDisksOptions) (Disks, error) {
-	body, err := client.query(ctx, "/groups/"+opts.Project+"/processes/"+opts.Mongo+"/disks", nil)
+	body, err := client.query(ctx, "/groups/"+opts.Project+"/hosts/"+opts.Mongo+"/disks", nil)
 	if err != nil {
 		return nil, err
 	}

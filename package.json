@@ -13,6 +13,7 @@
   "author": "Christoph Caprano",
   "license": "MIT",
   "devDependencies": {
+    "@emotion/core": "^10.0.0",
     "@grafana/data": "latest",
     "@grafana/runtime": "latest",
     "@grafana/toolkit": "latest",
@@ -20,12 +21,13 @@
     "@types/lodash": "latest"
   },
   "resolutions": {
-    "rxjs": "6.6.3"
+    "rxjs": "7.5.1"
   },
   "engines": {
     "node": ">=14"
   },
   "dependencies": {
-    "humanize-string": "^2.1.0"
+    "@emotion/core": "^10.0.0",
+    "humanize-string": "^3.0.0"
   }
 }

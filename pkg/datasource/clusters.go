@@ -33,7 +33,7 @@ func GetClusters(ctx context.Context, client *MongoDBAtlasClient, opts models.Li
 
 		clusters[i] = Cluster{
 			ID:   jCluster.Get("id").MustString(),
-			Name: jCluster.Get("name").MustString(),
+			Name: jCluster.Get("clusterName").MustString(),
 		}
 	}
 

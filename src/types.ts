@@ -112,21 +112,21 @@ export const DIMENSIONS = {
 };
 
 export const HUMANITZED_DIMENSIONS: Record<string, Array<SelectableValue<string>>> = {
-  disk_measurements: DIMENSIONS['disk_measurements'].map(dim => ({
+  disk_measurements: DIMENSIONS['disk_measurements'].map((dim) => ({
     value: dim,
     label: humanize(dim),
   })),
-  database_measurements: DIMENSIONS['database_measurements'].map(dim => ({
+  database_measurements: DIMENSIONS['database_measurements'].map((dim) => ({
     value: dim,
     label: humanize(dim),
   })),
-  process_measurements: DIMENSIONS['process_measurements'].map(dim => ({
+  process_measurements: DIMENSIONS['process_measurements'].map((dim) => ({
     value: dim,
     label: humanize(dim),
   })),
 };
 
-export const METRIC_TYPES = Object.keys(DIMENSIONS).map(metric => ({
+export const METRIC_TYPES = Object.keys(DIMENSIONS).map((metric) => ({
   value: metric,
   label: humanize(metric),
 }));

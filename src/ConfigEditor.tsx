@@ -66,7 +66,7 @@ export class ConfigEditor extends PureComponent<Props, State> {
             description={
               <span>
                 Please enter your MongoDB programmatic API key as described
-                <a href="https://docs.atlas.mongodb.com/configure-api-access" target="_blank">
+                <a href="https://docs.atlas.mongodb.com/configure-api-access" target="_blank" rel="noreferrer">
                   here
                 </a>
               </span>
